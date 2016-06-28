@@ -1,0 +1,40 @@
+*** Millepede-II steering file from eutelpy ***
+
+Cfiles ! C-type binary files
+milleBinary.dat
+
+* Global labels are plane-ID * 10 + 1..6 for
+* x-shift, y-shift, z-shift, x-rot, y-rot, z-rot
+
+Parameter ! fixed parameters
+      1  0.  -1. ! Reference
+      2  0.  -1. ! Reference
+      3  0.  -1. ! Reference
+      4  0.  -1. ! Reference
+      5  0.  -1. ! Reference
+      6  0.  -1. ! Reference
+   1293  0.  -1. ! Unused
+   1294  0.  -1. ! Unused
+   1295  0.  -1. ! Unused
+     23  0.  -1. ! Unused
+     24  0.  -1. ! Unused
+     25  0.  -1. ! Unused
+     33  0.  -1. ! Unused
+     34  0.  -1. ! Unused
+     35  0.  -1. ! Unused
+     51  0.  -1. ! Reference
+     52  0.  -1. ! Reference
+     53  0.  -1. ! Reference
+     54  0.  -1. ! Unused
+     55  0.  -1. ! Unused
+   1283  0.  -1. ! Unused
+   1284  0.  -1. ! Unused
+   1285  0.  -1. ! Unused
+
+method inversion 5 0.1 ! Solution method
+outlierdownweighting 4 ! M-estimators to downweight outliers
+chiscut 30. 6. ! Chi2-cuts for local (track) fits
+! Other options
+printcounts
+skipemptycons
+end

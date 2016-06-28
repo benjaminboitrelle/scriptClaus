@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source /nfs/dust/ilc/user/bboitrel/analysisClaus/PYROOT
+/usr/bin/python telmain.py

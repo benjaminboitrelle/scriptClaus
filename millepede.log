@@ -1,0 +1,158 @@
+  
+ Log-file Millepede II-P                        Tue Jun 28 14:16:14 2016
+                                                nafhh-ilc02.desy.de     
+  
+ Text and data files:
+  1  C_binary         milleBinary.dat
+  
+ LOOP1: starting
+ LOOP1:          23  labels from txt data stored
+ LOOP1: reading data files
+ LOOP1:          36  is total number NTGB of labels/parameters
+ LOOP1:           0  is number of pre-sigmas
+ LOOP1:          10  is number NVGB of variable parameters
+  
+     NREC =     14459 = number of records
+  MREQENF =        25 = required number of entries (from binary files)
+  MREQENA =        10 = required number of entries (from accepted fits)
+ LOOP1: ending
+  
+  
+ LOOP2: starting
+ LOOP2: start event reading
+ LOOP2: event reading ended - end of data
+     NTGB =        36 = total number of parameters
+                      (all parameters, appearing in binary files)
+     NVGB =        10 = number of variable parameters
+                      (appearing in fit matrix/vectors)
+     NAGB =        10 = number of all parameters
+                      (including Lagrange multiplier or reduced)
+     NFGB =        10 = number of fit parameters
+   MBANDW =         0 = band width of band matrix
+                      (if =0, no band matrix)
+     NOFF =        45 = max number of off-diagonal elements
+     NCGB =         0 = number of constraints
+    NAGBN =        10 = max number of global parameters in an event
+    NALCN =        32 = max number of local parameters in an event
+    NAEQN =        38 = max number of equations in an event
+   NCACHE =  25000000 = number of words for caching
+                      cache splitting   88.2 %   1.6 %  10.2 %
+  
+  
+ Solution method and matrix-storage mode:
+      METSOL = 1:  matrix inversion
+                   with           5  iterations
+      MATSTO = 1:  symmetric matrix, (n*n+n)/2 elements
+ Convergence assumed, if expected dF <  0.1000    
+  
+    Cut values of Chi^2/Ndf and Chi2,
+    corresponding to 2 and 3 standard deviations
+    Ndf  Chi^2/Ndf(2)  Chi^2(2)     Chi^2/Ndf(3)  Chi^2(3)
+     1       4.000         4.0          9.000         9.0
+     2       3.090         6.2          5.915        11.8
+     3       2.675         8.0          4.718        14.2
+     4       2.429         9.7          4.063        16.3
+     5       2.263        11.3          3.641        18.2
+     6       2.141        12.8          3.344        20.1
+     7       2.048        14.3          3.121        21.8
+     8       1.974        15.8          2.947        23.6
+     9       1.912        17.2          2.806        25.3
+    10       1.861        18.6          2.690        26.9
+    12       1.779        21.3          2.508        30.1
+    14       1.716        24.0          2.371        33.2
+    16       1.666        26.7          2.263        36.2
+    18       1.625        29.2          2.176        39.2
+    20       1.590        31.8          2.104        42.1
+    25       1.523        38.1          1.967        49.2
+    30       1.474        44.2          1.868        56.0
+    35       1.428        50.0          1.757        61.5
+    40       1.399        56.0          1.702        68.1
+ LOOP2: ending
+  
+ Chi square cut equiv 3 st.dev applied ...
+  in  first iteration with factor   30.000000    
+  in second iteration with factor   6.0000000    
+  (reduced by sqrt in next iterations)
+ Down-weighting of outliers in           4  iterations
+ Cut on downweight fraction   0.0000000    
+  
+ Solution algorithm: 
+ ========================================
+                         solution method:   matrix inversion
+            convergence limit at Delta F=   0.10E+00
+            maximum number of iterations=   5
+                        using pre-sigmas:   no
+                          regularization:   no
+    Chi square cut equiv 3 st.dev applied
+       ... in first iteration with factor   0.30E+02
+      ... in second iteration with factor   0.60E+01
+     (reduced by sqrt in next iterations)
+            Down-weighting of outliers in   4 iterations
+               Cut on downweight fraction   0.00E+00
+ Checking feasibility of parameters:
+    parameters are feasible  (i.e. satisfy constraints)
+  
+  === local fits have bordered band matrix structure ===
+    NBNDR =     14459 = number of records
+    NBDRX =         0 = max border size
+    NBNDX =         5 = max band width
+ Warning: the rank defect of the symmetric          10 -by-          10  matrix is            3  (should be zero).
+  
+ it fc   fcn_value dfcn_exp  slpr costh  iit st ls  step cutf rejects hhmmss FMS
+ -- -- ----------- --------  ---- -----  --- -- -- ----- ---- ------- ------ ---
+  0  1 0.30338E+06                                       30.0      30  00001 FMS
+  
+ Sum(Chi^2)/Sum(Ndf) =   303383.35509805940     
+                     / (       57896 -          10 )
+                     =   5.2410488736146803     
+  
+             with correction for down-weighting      6.3697724    
+  
+ In total 2 +           1  loops through the data files
+ Times [in sec] for     text processing       0.003
+                                  LOOP1       0.100
+                                  LOOP2       0.057
+   func. value                                0.000 *  0.
+   func. value, global matrix, solution       0.606 *  1.
+                           new solution       0.000 *  0.
+
+ Total time =           1  seconds =           0  h           0  m           1  seconds
+ end                                            Tue Jun 28 14:16:15 2016
+  
+      Peak dynamic memory allocation:    0.100201 GB
+  
+ Data rejected in last iteration:   
+               0  (rank deficit/NaN)            0  (Ndf=0)             29  (huge)              1  (large)
+  
+  
+             Explanation of iteration table
+             ==============================
+       it =  iteration number. Global parameters are improved for it > 0.
+             First function evaluation is called iteraton 0.
+       fc =  number of function evaluations.
+fcn_value =  value of 2 x Likelihood function (LF).
+             The final value is the chi^2 value of the fit and should
+             be about equal to the NDF (see below).
+ dfcn_exp =  expected reduction of the value of the Likelihood function (LF)
+     slpr =  ratio of the actual slope to inital slope.
+    costh =  cosine of angle between search direction and -gradient
+       ls =  line search info
+             < 0    recalculate function
+             = 0:   N or STP lt 0 or step not descending
+             = 1:   Linesearch convergence conditions reached
+             = 2:   interval of uncertainty at lower limit
+             = 3:   max nr of line search calls reached
+             = 4:   step at the lower bound
+             = 5:   step at the upper bound
+             = 6:   rounding error limitation
+     step =  the factor for the Newton step during the line search. Usually
+             a value of 1 gives a sufficient reduction of the LF. Oherwise
+             other step values are tried.
+     cutf =  cut factor. Local fits are rejected, if their chi^2 value
+             is larger than the 3-sigma chi^2 value times the cut factor.
+             A cut factor of 1 is used finally, but initially a larger
+             factor may be used. A value of 0.0 means no cut.
+  rejects =  total number of rejected local fits.
+   hmmsec =  the time in hours (h), minutes (mm) and seconds.
+      FMS =  calculation of Function value, Matrix, Solution.
+  
