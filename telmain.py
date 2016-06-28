@@ -67,7 +67,7 @@ if __name__ == '__main__':
   #   DUT matching: X/Y-distances of DUT hit to track
   #cuts = ((2., 2), None, (0.01, 0.01), (1., 1.), (5., 5.))  # iteration 1, no alignment, B off
   #cuts = ((2., 0.5), None, (0.005, 0.003), (0.25, 0.25), (0.25, 0.25))  # iteration 2,some alignment, B off
-  cuts = ((-1.5, -0.5), (-0.5, 0.5), None, None, (-0.001, 0.001), (-0.001, 0.001), (-0.05, 0.02), (-0.05, 0.02), (-5., 5.), (-5., 5.))  # iteration 2,some alignment, B off
+  cuts = ((-1.5, -0.5), (-0.5, 0.5), None, None, (-0.001, 0.001), (-0.001, 0.001), (-0.05, 0.02), (-0.05, 0.02), (-15., 15.), (-15., 15.))  # iteration 2,some alignment, B off
   #cuts = ((1., 1.), None, (0.0025, 0.0025), (0.1, 0.1), (0.25, 0.25))  # iteration 2, some alignment, B off
   print "Cuts: ", cuts
   # histograms for cut values
